@@ -45,7 +45,7 @@
         [mailer setSubject:contentSubject];
         NSData *body = [shareContent dataUsingEncoding:NSUTF8StringEncoding];
         NSData *myData = UIImagePNGRepresentation(shareImage);
-        [mailer addAttachmentData:myData mimeType:@"image/png" fileName:@"GloboFish.png"];
+        [mailer addAttachmentData:myData mimeType:@"image/png" fileName:@"ShareImage.png"];
         NSString *emailBody = [[NSString alloc] initWithData:body encoding:NSUTF8StringEncoding];
         [mailer setMessageBody:emailBody isHTML:NO];
         AppDelegate *appdelegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
