@@ -15,9 +15,10 @@
 @interface iShare : UIActionSheet<UIActionSheetDelegate>
 {
   NSString *shareContent;
+  NSString *contentSubject;
   UIImage *shareImage;
 }
 
-- (void) setShareContent:(NSString *)content withImage:(UIImage *)image;
+- (void) setShareSubject:(NSString *)subject andContent:(NSString *)content withImage:(UIImage *)image;
 
 @end
