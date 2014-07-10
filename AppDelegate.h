@@ -1,6 +1,6 @@
 //
 //  AppDelegate.h
-//  AppDelegate
+//  iShare
 //
 //  Created by Harikrishnan T on 10/07/14.
 //  Copyright (c) 2014 FyrWeel. All rights reserved.
