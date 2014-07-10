@@ -71,7 +71,6 @@
 }
 
 - (void)shareToFb {
-    
     if ([SLComposeViewController isAvailableForServiceType:SLServiceTypeFacebook]) {
         SLComposeViewController *slComposeViewController = [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeFacebook];
         [slComposeViewController setInitialText:shareContent];
@@ -86,7 +85,7 @@
         SLComposeViewController *slComposeViewController = [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeTwitter];
         [slComposeViewController setInitialText:shareContent];
         [slComposeViewController addImage:shareImage];
-        VBSAppDelegate *appdelegate = (VBSAppDelegate *)[UIApplication sharedApplication].delegate;
+        AppDelegate *appdelegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
         [appdelegate.window.rootViewController presentViewController:slComposeViewController animated:YES completion:nil];
     }
 }
