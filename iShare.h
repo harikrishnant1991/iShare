@@ -14,8 +14,8 @@
 
 @interface iShare : UIActionSheet<UIActionSheetDelegate>
 {
-  NSString *shareContent;
   NSString *contentSubject;
+  NSString *shareContent;
   UIImage *shareImage;
 }
 
